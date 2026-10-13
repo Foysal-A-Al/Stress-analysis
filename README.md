@@ -23,6 +23,8 @@ python -m pip install -r requirements.txt
 python analysis.py --output audit.json
 ```
 
+If `python` is unavailable but [`uv`](https://docs.astral.sh/uv/) is installed (as on the current Windows workstation), run `uv run --python 3.12 --with pandas --with scikit-learn analysis.py --output audit.json` from the repository directory.
+
 The command prints JSON and optionally saves it to `audit.json`. Use Python 3.10 or later. The script validates the columns and numeric data, reports class counts and the `blood_pressure` versus `stress_level` table, and evaluates a random forest with and without blood pressure against a majority-class baseline. It uses the same five shuffled stratified folds in both experiments and computes accuracy and macro F1. A fixed seed makes this comparison repeatable. This is a **new diagnostic**, not a result claimed by the 2024 paper. No tuning is done; the cross-validation scores should not be presented as an externally validated clinical prediction system.
 
 ## Target and variable provenance
