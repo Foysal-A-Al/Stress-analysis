@@ -2,10 +2,6 @@
 
 ![Student Stress Factors research banner](docs/assets/stress-banner.svg)
 
-# Student Stress Factors
-
-### Published study · Open dataset · Reproducibility audit
-
 **A transparent look at the data behind a 2024 study of student stress**
 
 [Read the paper](https://doi.org/10.1007/s44163-024-00169-6) · [Explore the data](StressLevelDataset.csv) · [Original notebook](Stress_analysis.ipynb) · [Run the audit](analysis.py)
