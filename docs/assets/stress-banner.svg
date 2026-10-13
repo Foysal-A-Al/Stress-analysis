@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320" role="img" aria-labelledby="title desc">
+  <title id="title">Student Stress Factors</title>
+  <desc id="desc">Decorative animated research banner with abstract flowing signals and three stress-level markers. The curves are not study data.</desc>
+  <defs>
+    <linearGradient id="background" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1725"/>
+      <stop offset=".56" stop-color="#102b39"/>
+      <stop offset="1" stop-color="#173e43"/>
+    </linearGradient>
+    <linearGradient id="line" x2="1" y2="0">
+      <stop stop-color="#59cbbd" stop-opacity=".06"/>
+      <stop offset=".48" stop-color="#7ee3ce" stop-opacity=".9"/>
+      <stop offset="1" stop-color="#a4e4df" stop-opacity=".12"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop stop-color="#5ddec1" stop-opacity=".27"/>
+      <stop offset="1" stop-color="#5ddec1" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="panel"><rect width="1280" height="320" rx="20"/></clipPath>
+    <style>
+      .flow-a {animation: drift-a 12s ease-in-out infinite alternate}
+      .flow-b {animation: drift-b 10s ease-in-out infinite alternate}
+      .pulse {animation: breathe 3.6s ease-in-out infinite}
+      .pulse-2 {animation: breathe 3.6s ease-in-out 1.2s infinite}
+      .pulse-3 {animation: breathe 3.6s ease-in-out 2.4s infinite}
+      .halo {animation: glow 7s ease-in-out infinite alternate}
+      @keyframes drift-a {from {transform:translateY(-8px)} to {transform:translateY(12px)}}
+      @keyframes drift-b {from {transform:translateY(11px)} to {transform:translateY(-10px)}}
+      @keyframes breathe {0%,100% {opacity:.45} 50% {opacity:1}}
+      @keyframes glow {from {opacity:.55} to {opacity:1}}
+      @media (prefers-reduced-motion: reduce) {
+        .flow-a,.flow-b,.pulse,.pulse-2,.pulse-3,.halo {animation:none}
+      }
+    </style>
+  </defs>
+  <g clip-path="url(#panel)">
+    <rect width="1280" height="320" fill="url(#background)"/>
+    <path d="M0 60H1280M0 120H1280M0 180H1280M0 240H1280M0 300H1280M80 0V320M160 0V320M240 0V320M320 0V320M400 0V320M480 0V320M560 0V320M640 0V320M720 0V320M800 0V320M880 0V320M960 0V320M1040 0V320M1120 0V320M1200 0V320" fill="none" stroke="#d1fbef" stroke-opacity=".045"/>
+    <ellipse class="halo" cx="1050" cy="160" rx="330" ry="260" fill="url(#glow)"/>
+    <g class="flow-a" fill="none" stroke="url(#line)" stroke-width="2.5">
+      <path d="M720 185 C770 185 790 182 820 182 C854 182 851 119 884 119 C919 119 919 219 954 219 C991 219 987 151 1026 151 C1065 151 1062 182 1101 182 C1153 182 1170 165 1285 165"/>
+      <path d="M720 235 C780 235 780 218 824 218 C861 218 864 247 902 247 C943 247 945 194 985 194 C1028 194 1028 226 1067 226 C1120 226 1148 210 1285 210" opacity=".34"/>
+    </g>
+    <g class="flow-b" fill="none" stroke="#8adac8" stroke-opacity=".22" stroke-width="2">
+      <path d="M745 90 C815 90 812 109 858 109 C911 109 912 70 962 70 C1016 70 1012 108 1067 108 C1111 108 1120 82 1285 82"/>
+      <path d="M750 274 C810 274 822 259 868 259 C921 259 928 279 972 279 C1021 279 1035 250 1089 250 C1157 250 1175 268 1285 268"/>
+    </g>
+    <g fill="#92e8d2">
+      <circle class="pulse" cx="884" cy="119" r="6"/>
+      <circle class="pulse-2" cx="954" cy="219" r="6"/>
+      <circle class="pulse-3" cx="1026" cy="151" r="6"/>
+    </g>
+    <path d="M58 52V258" stroke="#77d9c2" stroke-width="4" stroke-linecap="round"/>
+    <g font-family="DejaVu Sans, Arial, sans-serif">
+      <text x="83" y="74" fill="#8ee2cc" font-size="15" font-weight="700" letter-spacing="3">RESEARCH  /  DATA  /  INTERPRETATION</text>
+      <text x="80" y="145" fill="#f5faf8" font-size="49" font-weight="700">Student Stress Factors</text>
+      <text x="83" y="188" fill="#d0e5e4" font-size="23">A transparent view of student stress data</text>
+      <text x="83" y="250" fill="#98b8bb" font-size="16">Published study  ·  Reproducibility audit  ·  Open methods</text>
+    </g>
+    <rect x="80" y="273" width="590" height="1" fill="#a4e4df" opacity=".25"/>
+    <circle cx="1050" cy="162" r="128" fill="none" stroke="#b4f0de" stroke-opacity=".1"/>
+    <circle cx="1050" cy="162" r="168" fill="none" stroke="#b4f0de" stroke-opacity=".06"/>
+  </g>
+</svg>
