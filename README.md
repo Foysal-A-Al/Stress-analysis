@@ -1,5 +1,7 @@
 <div align="center">
 
+![Student Stress Factors research banner](docs/assets/stress-banner.svg)
+
 # Student Stress Factors
 
 ### Published study · Open dataset · Reproducibility audit
